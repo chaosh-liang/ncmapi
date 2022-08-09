@@ -5,6 +5,7 @@ async function start() {
   await generateConfig()
   require('./server').serveNcmApi({
     checkVersion: true,
+    port: 5001,
   })
 }
 start()
